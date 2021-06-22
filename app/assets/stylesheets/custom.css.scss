@@ -98,16 +98,12 @@ font-family: 'Poppins', sans-serif;
 }
 #home-container{
 display: flex;
+margin-top: 150px;
 justify-content: space-around;
-margin-top: 100px;
 
 }
-.jumbotron-fluid{
 
 
-
-
-}
 
 #im img{
   height: 350px;
@@ -148,17 +144,26 @@ margin-top: 100px;
 .sign-btn:hover{
   background: #7d9eff;
 }
+@media only screen and (min-width: 801px) {
+    .signwithimg img {
+      display: none;
+    }
+}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
 
  #home-container{
+
+   margin-top: 100px;
    flex-direction: column;
 
  }
  #im img{
-   margin-left: 40px;
-   padding-bottom: 70px;
+
+  // display: none;
  }
+
+
 
 }
 
