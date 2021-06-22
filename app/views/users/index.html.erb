@@ -17,7 +17,7 @@
         <p class="card-text">
         <%=pluralize(user.articles.count,"article")%>
         </p>
-        <%= link_to 'Show Profile', user, class:"btn btn-outline-primary btn-sm"%>
+        <%= link_to 'Show Profile', user, class:"btn btn-sm"%>
         <% if logged_in?%>
           <% if user==current_user%>
             <%= link_to 'Edit Prfoile', edit_user_path(user),class:"btn btn-outline-secondary btn-sm" %>
