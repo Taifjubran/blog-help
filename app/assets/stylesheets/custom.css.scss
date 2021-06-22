@@ -1,42 +1,68 @@
+
+
 @import 'bootstrap/dist/css/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Delius');
 
-.navbar {
 
-    background-color: #5e60ce !important;
+.navbar{
+  background-color:#7d9eff;
+}
+
+.btn, .badge{
+  background-color: #7d9eff;
+  color: white;
+}
+
+#navcont{
+  background-color:#FFEAD0;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px  10%;
 }
 
 .nav-link{
-    color: #f7fff7 !important;
+    color: black !important;
 }
+
+
 
 #logo{
+  cursor: pointer;
+  font-weight: bold;
 
     float: left;
-    color:  #f7fff7 ;
+    color:  black ;
     text-transform: uppercase;
-    font-weight: bold;
+
 }
 
+.nav-item {
+  display: inline-block;
+  padding: 0px 20px;
 
+}
+.nav-link li a {
+  transition: all 0,3s ease 0s;
+}
+.nav-link:hover {
+  color: white !important;
+}
 
 html,
 body {
-  height: 100%;
+background-color: #ffff;
+font-family: 'Poppins', sans-serif;
+
+
+
 }
 
 
 
-#sticky-footer {
-  flex-shrink: none;
-}
+// /* Other Classes for Page Styling */
 
-/* Other Classes for Page Styling */
 
-body {
-  background: linear-gradient(to right, #0062E6, #33AEFF);
-  background-image: asset-url('1.jpg');
-
-}
 #home-container {
   margin-top: 40px;
 }
@@ -48,11 +74,11 @@ body {
   .apple_pagination a, .apple_pagination span {
     padding: 0.2em 0.3em; }
   .apple_pagination .disabled {
-    color: white; }
+    color: #c5c5c5; }
   .apple_pagination .current {
     font-style: normal;
     font-weight: bold;
-    background-color:white;
+    background-color:#c5c5c5;
     display: inline-block;
     width: 1.4em;
     height: 1.4em;
@@ -63,6 +89,86 @@ body {
     text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
   .apple_pagination a {
     text-decoration: none;
-    color: white; }
+    color:#c5c5c5; }
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
+
+
+
+.my-4{
+  margin-top:0px !important;
+}
+#home-container{
+display: flex;
+justify-content: space-around;
+margin-top: 100px;
+
+}
+.jumbotron-fluid{
+
+
+
+
+}
+
+#im img{
+  height: 350px;
+  width: 400px;
+}
+.jumbotron-fluid  h3{
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+}
+.jumbotron-fluid span {
+  color: #7d9eff;
+  font-size: 50px;
+
+}
+.jumbotron-fluid  p{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+
+.sign-btn{
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+
+}
+
+.sign-btn:hover{
+  background: #7d9eff;
+}
+
+@media only screen and (max-width: 800px) {
+
+ #home-container{
+   flex-direction: column;
+
+ }
+ #im img{
+   margin-left: 40px;
+   padding-bottom: 70px;
+ }
+
+}
+
+
+
+
+
+
+
+
+
