@@ -1,9 +1,9 @@
-<h1 class= "text-center mt-4 text-white"> Categories  </h1>
+<h1 class= "text-center mt-4 text-dark"> Categories  </h1>
 
 <div class="container apple_pagination">
  <%= will_paginate @posts, :container => false %>
  <% @categories.each do |category| %>
- <div class = "row justify-content-md-center mt-4">
+ <div class = "row d-flex justify-content-center">
  <div class ="col-4 mt-4">
     <div class="card text-center">
       <div class="card-body">
